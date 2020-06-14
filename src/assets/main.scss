@@ -1,0 +1,14 @@
+html * {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.stroke {
+  text-shadow:1px 1px 0 #fff, -1px -1px 0 #fff,
+              -1px 1px 0 #fff, 1px -1px 0 #fff,
+              0px 1px 0 #fff,  0-1px 0 #fff,
+              -1px 0 0 #fff, 1px 0 0 #fff;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
