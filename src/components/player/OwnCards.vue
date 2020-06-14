@@ -34,9 +34,11 @@ export default {
   methods: {
     putDown(signature) {
       if (this.isMe && this.isPlayerTurn) {
+        const cardN = this.$sigToNum(signature);
         // カードの条件判定
         this.$whim.assignState({
-          mainCard: this.$sigToNum(signature),
+          hand: { [cardN]: null }, // nullでデータベースから削除
+          mainCard: cardN,
           turn: this.$nextTurn()
         });
       }
