@@ -1,7 +1,7 @@
 <template>
   <div @click="$emit('click', signature)" @mouseover="$emit('mouseover')">
     <img
-      src="@/assets/joker.png"
+      src="@/assets/joker.svg"
       v-if="signature === 'joker' && !cover"
       :width="width"
       :height="height"
